@@ -10,11 +10,11 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    @article = Articleu.find(params[:id])
+    @article = Article.find(params[:id])
   end
 
   private
-  
+
   def article_params
     params.require(:article).permit(:title, :text)
   end
