@@ -17,3 +17,6 @@ module RailsHerokuTest
     # the framework and any gems in your application.
   end
 end
+Raven.configure do |config|
+  config.dsn = 'https://52dd9b1a8b9e4fffab66f0ed25d872cd:2b0169c0b6fd4168a69989187d0c6068@sentry.io/1457789'
+end
